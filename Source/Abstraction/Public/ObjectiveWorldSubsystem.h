@@ -20,6 +20,9 @@ public:
 	void DisplayObjectiveWidget();
 
 	void OnObjectiveCompleted();
+
+	UFUNCTION(BlueprintCallable)
+		FString GetCurrentObjectiveDescription() { return TEXT("Open Door"); }
 private:
 	UUserWidget* ObjectiveWidget = nullptr;
 	
